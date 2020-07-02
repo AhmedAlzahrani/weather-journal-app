@@ -1,5 +1,9 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = {};
+projectData = {
+    weatherData: [
+
+    ]
+};
 
 
 
@@ -31,4 +35,12 @@ const PORT = 1200;
 const listening = app.listen(PORT , (req , res) => {
     console.log("Server Running");
     console.log("Running on http://localhost:1200");
+})
+
+app.get('/weather' , (req , res) => {
+    res.send(projectData);
+})
+app.post('/weather' , (req , res) => {
+    projectData.weatherData.push(req.body);
+    console.log(projectData)
 })
