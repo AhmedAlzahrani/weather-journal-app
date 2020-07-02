@@ -34,7 +34,7 @@ const PORT = 1200;
 //Listening to PORT
 const listening = app.listen(PORT , (req , res) => {
     console.log("Server Running");
-    console.log("Running on http://localhost:1200");
+    console.log("Running on https://localhost:1200");
 })
 
 app.get('/weather' , (req , res) => {
