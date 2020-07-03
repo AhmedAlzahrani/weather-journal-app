@@ -2,7 +2,7 @@
 const serverURL = 'https://localhost:1200/weather' // url to the route weather
 // API key
 const APIKey = '&appid=9dc214b2626c9ab862c5cee625198586';
-const url = 'https://api.openweathermap.org/data/2.5/weather?zip=';
+const url = 'http://api.openweathermap.org/data/2.5/weather?zip=';
 
 
 // Create a new date instance dynamically with JS
