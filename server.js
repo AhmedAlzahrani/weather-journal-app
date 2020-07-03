@@ -39,7 +39,7 @@ const listening = app.listen(PORT , (req , res) => {
 
 app.get('/weather' , (req , res) => {
     console.log("project data: " , projectData)
-    res.send(projectData);
+    res.send(projectData.weatherData[projectData.weatherData.length-1]);
 })
 app.post('/weather' , (req , res) => {
     console.log(`Request's Body: ${JSON.stringify(req.body)}`);
