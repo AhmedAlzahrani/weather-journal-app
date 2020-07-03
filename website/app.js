@@ -1,5 +1,5 @@
 /* Global Variables */
-const serverURL = 'https://localhost:1200/weather' // url to the route weather
+const serverURL = 'http://localhost:1200/weather' // url to the route weather
 // API key
 const APIKey = '&appid=9dc214b2626c9ab862c5cee625198586';
 const url = 'http://api.openweathermap.org/data/2.5/weather?zip=';
