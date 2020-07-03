@@ -37,10 +37,10 @@ document.getElementById('generate').addEventListener('click' ,function fetchWeat
             fetch(serverURL)
             .then(res=> res.json())
             .then(data=>{
-                const serverData = data.weatherData[0]
-                const date = serverData.date;
-                const temperature = serverData.temperature;
-                const feeling = serverData.feelings;
+                // const serverData = data.weatherData[0]
+                const date = data.date;
+                const temperature = data.temperature;
+                const feeling = data.feelings;
 
                 document.querySelector('#date').innerHTML = date;
                 document.querySelector('#temp').innerHTML = temperature;
