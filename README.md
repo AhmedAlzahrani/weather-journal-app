@@ -6,3 +6,4 @@
       -Express
       -body-parser
       -cors
+#### Also you have to edit the api key in website/app.js to your own api key to test the project
